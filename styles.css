@@ -1,0 +1,284 @@
+/* ------------------------ RESET BÁSICO ------------------------ */
+/* Elimina márgenes y rellenos por defecto, y configura el modelo de caja */
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ------------------------ ESTILO GENERAL DEL BODY ------------------------ */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía moderna y legible */
+    background: #fafafa; /* Fondo claro */
+    color: #adacac; /* Color de texto gris claro */
+    line-height: 1.5; /* Altura de línea para mejor legibilidad */
+    min-height: 100vh; /* Altura mínima igual a la altura de la ventana */
+    padding-left: 180px; /* Deja espacio para la navegación lateral fija */
+}
+
+/* ------------------------ NAVEGACIÓN LATERAL ------------------------ */
+.nav-lateral {
+    background: #000000; /* Fondo negro */
+    color: #ffffff; /* Texto blanco */
+    width: 160px; /* Ancho fijo */
+    height: 100vh; /* Altura de toda la ventana */
+    position: fixed; /* Fija a la izquierda */
+    top: 0;
+    left: 0;
+    overflow-y: auto; /* Desplazamiento si el contenido es largo */
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+/* Estilos de los enlaces dentro del menú lateral */
+.nav-lateral .principal a {
+    display: block;
+    color: #ffcdcd; /* Color de los enlaces */
+    text-decoration: none;
+    padding: 12px 16px;
+    border-left: 4px solid transparent; /* Borde decorativo izquierdo */
+    transition: background 0.3s, border-color 0.3s; /* Animación suave */
+}
+
+/* Efectos al pasar el cursor o enfocar enlaces */
+.nav-lateral .principal a:hover,
+.nav-lateral .principal a:focus {
+    background: #444;
+    border-left-color: #84536f; /* Cambia el color del borde izquierdo */
+    outline: none;
+}
+
+/* ------------------------ HEADER (ENCABEZADO) ------------------------ */
+header {
+    position: fixed;
+    top: 0;
+    left: 180px; /* Corre el header hacia la derecha para evitar la barra lateral */
+    right: 0;
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 20px;
+    overflow: hidden;
+}
+
+/* Contenedor del logo */
+.logo-container {
+    float: left;
+    height: 100%;
+}
+
+/* Logo de la empresa o sitio */
+.logo-container img.logo {
+    height: 90px;
+    margin-top: 5px;
+}
+
+/* Contenedor del nombre y el eslogan */
+.name_slogan {
+    float: left;
+    margin-left: 20px;
+    padding-top: 10px;
+}
+
+/* Nombre del sitio o empresa */
+.name_slogan h1 {
+    font-size: 1.8rem;
+    color: #222;
+}
+
+/* Eslogan o subtítulo */
+.name_slogan h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #666;
+}
+
+/* ------------------------ SECCIONES GENERALES ------------------------ */
+.section {
+    padding: 100px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* ------------------------ TARJETAS DE PRODUCTOS ------------------------ */
+.products .card {
+    display: inline-block;
+    width: 310px;
+    height: 450px; /* Altura uniforme para todas las tarjetas */
+    margin: 10px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    vertical-align: top;
+}
+
+/* Título del producto */
+.products .card h3 {
+    font-size: 20px;
+    margin: 20px;
+}
+
+/* Descripción del producto */
+.products .card p {
+    font-size: 1rem;
+    /* margin-bottom: 15px; */
+}
+
+/* Imagen del producto con efectos visuales */
+.card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* Cubre el área sin distorsión */
+    border-radius: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Efecto al pasar el mouse sobre la imagen */
+.card img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ------------------------ FORMULARIO DE CONTACTO ------------------------ */
+.section.contact form {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Entradas de texto, correo y área de texto */
+.section.contact input[type="text"],
+.section.contact input[type="email"],
+.section.contact textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    resize: vertical;
+    font-family: inherit;
+}
+
+/* Botón del formulario */
+.section.contact button {
+    background-color: #ff77b6;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: inherit;
+}
+
+/* Efecto del botón al pasar el mouse */
+.section.contact button:hover,
+.section.contact button:focus {
+    background-color: #7e7e7e;
+    outline: none;
+}
+
+/* ------------------------ PIE DE PÁGINA ------------------------ */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: #eee;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* ------------------------ MEDIA QUERIES (RESPONSIVIDAD) ------------------------ */
+
+/* Ajustes para tablets y pantallas medianas */
+@media (max-width: 900px) {
+    body {
+        padding-left: 0; /* Se elimina espacio lateral en pantallas pequeñas */
+    }
+
+    .nav-lateral {
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .nav-lateral .principal a {
+        display: inline-block;
+        padding: 10px 15px;
+    }
+
+    header {
+        position: relative;
+        left: 0;
+        height: auto;
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .logo-container,
+    .name_slogan {
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .logo-container img.logo {
+        height: 60px;
+        margin: 0 auto 10px;
+    }
+
+    .name_slogan h1 {
+        font-size: 1.5rem;
+    }
+
+    .name_slogan h2 {
+        font-size: 1rem;
+    }
+
+    .section {
+        margin: 20px 15px;
+    }
+
+    .card {
+        width: 45%;
+        margin: 10px 2.5%;
+    }
+}
+
+/* Ajustes para móviles pequeños */
+@media (max-width: 480px) {
+    .card {
+        width: 90%;
+        margin: 10px 5%;
+    }
+
+    header {
+        padding: 10px 5px;
+    }
+
+    .name_slogan h1 {
+        font-size: 1.3rem;
+    }
+
+    .name_slogan h2 {
+        font-size: 0.9rem;
+    }
+
+    .section.contact form {
+        padding: 15px 10px;
+    }
+}
