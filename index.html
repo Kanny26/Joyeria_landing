@@ -1,34 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <meta charset="UTF-8" />
-  <meta name="description"
-    content="Abby Accesorios - Joyería artesanal hecha a mano. Descubre manillas, aretes, anillos y más. Hecho con amor." />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abby Accesorios - Joyería artesanal hecha a mano. Descubre manillas, aretes, anillos y más. Hecho con amor." />
   <title>Abby Accesorios – Joyería Artesanal</title>
   <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
 </head>
 
 <body>
+  <!-- Navegación lateral -->
   <nav class="barra-lateral">
-    <div class="barra-lateral-menu">
-      <div class="barra-lateral__logo">
-        <i class="barra-lateral__icono bi bi-list"></i>
-      </div>
-      <a class="barra-lateral__enlace" href="#manillas">Manillas</a>
-      <a class="barra-lateral__enlace" href="#aretes-largos">Aretes Largos</a>
-      <a class="barra-lateral__enlace" href="#conjuntos">Conjuntos</a>
-      <a class="barra-lateral__enlace" href="#topitos">Topitos</a>
-      <a class="barra-lateral__enlace" href="#anillos">Anillos</a>
-      <a class="barra-lateral__enlace" href="#contacto">Contacto</a>
+  <div class="barra-lateral__menu">
+    <div class="barra-lateral__logo">
+      <i class="barra-lateral__icono bi bi-list"></i>
     </div>
-  </nav>
+    <a class="barra-lateral__enlace" href="#bienvenida">Inicio</a>
+    <a class="barra-lateral__enlace" href="#destacados">Destacados</a>
+    <a class="barra-lateral__enlace" href="#manillas">Manillas</a>
+    <a class="barra-lateral__enlace" href="#aretes-largos">Aretes Largos</a>
+    <a class="barra-lateral__enlace" href="#conjuntos">Conjuntos</a>
+    <a class="barra-lateral__enlace" href="#topitos">Topitos</a>
+    <a class="barra-lateral__enlace" href="#anillos">Anillos</a>
+    <a class="barra-lateral__enlace" href="#contacto">Contacto</a>
+  </div>
+</nav>
 
+
+  <!-- Encabezado -->
   <header class="encabezado">
     <div class="encabezado__logo-contenedor">
-      <img class="encabezado__logo" src="img/Logo.png" alt="Logo" />
+      <img class="encabezado__logo" src="img/Logo.png" alt="Logo Abby Accesorios" />
     </div>
     <div class="encabezado__texto">
       <h1 class="encabezado__titulo">Abby Accesorios</h1>
@@ -36,192 +39,192 @@
     </div>
   </header>
 
-  <section class="seccion-bienvenida">
+  <!-- Sección de bienvenida -->
+  <section class="seccion-bienvenida" id="bienvenida">
     <div class="seccion-bienvenida__contenido">
-      <h1 class="seccion-bienvenida__titulo">Bienvenido a Abby Accesorios</h1>
-      <p class="seccion-bienvenida__texto">Descubre nuestra colección de joyería. Cada pieza es única y está diseñada con amor y dedicación.</p>
-      <a href="#manillas" class="seccion-bienvenida__boton">Ver catálogo</a>
+      <h1 class="seccion-bienvenida__titulo">Refleja tu esencia</h1>
+      <p class="seccion-bienvenida__descripcion">Joyería artesanal hecha a mano con amor.</p>
+      
     </div>
   </section>
 
-  <section class="destacados">
+<!-- Productos destacados --> 
+<section class="destacados" id="destacados"> 
+  <h2 class="destacados__titulo">Más vendidos del mes</h2> 
+  <div class="destacados__lista">
+    <div class="destacados__item">
+      <img class="destacados__imagen" src="img/topitos_mariposa.jpeg" alt="Topitos mariposa" /> 
+      <h3 class="destacados__nombre">Topitos mariposa</h3> 
+      <p class="destacados__descripcion">Elegantes, delicados y artesanales.</p> 
+    </div> 
+    <div class="destacados__item"> 
+      <img class="destacados__imagen" src="img/topitos_esmeraldas.jpeg" alt="Topitos esmeraldas" /> 
+      <h3 class="destacados__nombre">Topitos esmeraldas</h3> 
+      <p class="destacados__descripcion">Topitos con diseño de esmeraldas.</p> 
+    </div> 
+    <div class="destacados__item"> 
+      <img class="destacados__imagen" src="img/manilla_negra_perlasnegras.jpg" alt="Manilla perlas negras" /> 
+      <h3 class="destacados__nombre">Manilla perlas negras</h3> 
+      <p class="destacados__descripcion">Manilla tejida con perlas negras.</p> 
+    </div> 
+    <div class="destacados__item"> 
+      <img class="destacados__imagen" src="img/conjunto_conchitas_plateado.jpeg" alt="Juego con conchitas plateadas" /> 
+      <h3 class="destacados__nombre">Juego collar y aretes</h3> 
+      <p class="destacados__descripcion">Con conchitas plateadas.</p> 
+    </div> 
+  </div> 
+  <a href="#manillas" class="seccion-destacados__boton">Ver catálogo</a> 
+</section>
 
-    <h2 class="destacados__titulo">Favoritos del mes</h2>
-    <div class="destacados__lista">
-    <div class="destacados__item">
-      <img class="destacados__imagen" src="img/topitos_mariposa.jpeg" alt="Topitos mariposa" />
-      <h3 class="destacados__nombre">Topitos mariposa</h3>
-      <p class="destacados__descripcion">Elegantes, delicados y artesanales.</p>
-    </div>
-    <div class="destacados__item">
-      <img class="destacados__imagen" src="img/manilla_negra_perlasnegras.jpg" alt="Manilla perlas negras" />
-      <h3 class="destacados__nombre">Manilla perlas negras</h3>
-      <p class="destacados__descripcion">Tejida con perlas negras, perfecta para cualquier ocasión.</p>
-    </div>
-    <div class="destacados__item">
-      <img class="destacados__imagen" src="img/Anillos_delicados1.jpg" alt="Anillos delicados" />
-      <h3 class="destacados__nombre">Anillos delicados</h3>
-      <p class="destacados__descripcion">Conjunto de anillos elegantes y sofisticados.</p>
-    </div>
-  </section>
- 
-  <section>
 
-    <div class="section-products" id="manillas">
-    <h2 class="seccion-productos__titulo">Manillas</h2>
-    <div class="producto">
-      <img class="producto__imagen" src="img/manilla_negra_perlasnegras.jpg" alt="Manilla perlas negras" />
-      <h3 class="producto__titulo">Manilla perlas negras</h3>
-      <p class="producto__descripcion">Manilla tejida con perlas negras.</p>
-    </div>
-    <div class="producto">
-      <img class="producto__imagen" src="img/manilla_verde_pepasdoradas.jpg" alt="Manilla de perlas doradas" />
-      <h3 class="producto__titulo">Manilla de perlas doradas</h3>
-      <p class="producto__descripcion">Manilla de perlas doradas tejida.</p>
-    </div>
-    <div class="producto">
-      <img class="producto__imagen" src="img/manilla_lila_flores.jpg" alt="Manilla de perlas y flor" />
-      <h3 class="producto__titulo">Manilla tejida lila con dijes de flor</h3>
-      <p class="producto__descripcion">Manilla tejida con dijes de flor en tonos lilas.</p>
-    </div>
-    <div class="producto">
-      <img class="producto__imagen" src="img/manilla_azulneopreno.jpg" alt="Manilla con hilo azul y pepitas de neopreno" />
-      <h3 class="producto__titulo">Manilla con hilo azul pepitas de neopreno</h3>
-      <p class="producto__descripcion">Manilla tejida con pepitas de neopreno.</p>
-    </div>
+
+<section class="seccion-productos" id="manillas"> 
+  <h2 class="seccion-productos__titulo">Manillas</h2> 
+  <div class="producto">
+    <img class="producto__imagen" src="img/manilla_negra_perlasnegras.jpg" alt="Manilla perlas negras" /> 
+    <h3 class="producto__titulo">Manilla perlas negras</h3> 
+    <p class="producto__descripcion">Manilla tejida con perlas negras.</p> 
   </div>
-  </section>
+  <div class="producto">
+    <img class="producto__imagen" src="img/manilla_verde_pepasdoradas.jpg" alt="Manilla de perlas doradas" /> 
+    <h3 class="producto__titulo">Manilla de perlas doradas</h3> 
+    <p class="producto__descripcion">Manilla de perlas doradas tejida.</p> 
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/manilla_lila_flores.jpg" alt="Manilla con dijes de flor" /> 
+    <h3 class="producto__titulo">Manilla tejida lila con dijes de flor</h3> 
+    <p class="producto__descripcion">Manilla tejida con dijes de flor en tonos lilas.</p> 
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/manilla_azulneopreno.jpg" alt="Manilla con hilo azul" /> 
+    <h3 class="producto__titulo">Manilla con hilo azul y pepitas de neopreno</h3> 
+    <p class="producto__descripcion">Manilla tejida con pepitas de neopreno.</p> 
+  </div>
   
+</section>
 
-  <section>
-      <div class="section-products" id="aretes-largos">
-      <h2 class="seccion-productos__titulo">Aretes largos</h2>
-      <div class="producto">
-        <img class="producto__imagen" src="img/Largo_perlas.jpeg" alt="Arete largo 1" />
-        <h3 class="producto__titulo">Arete largo dorado</h3>
-        <p class="producto__descripcion"> Arete largo con perlas pequeñas</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/Largos_aros.jpeg" alt="Arete largo 2" />
-        <h3 class="producto__titulo">Arete largo multi aros</h3>
-        <p class="producto__descripcion">Arete largo con múltiples aros entrelazados.</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/Largos_balinesflor.jpeg" alt="Arete largo 1" />
-        <h3 class="producto__titulo">Arete largo plateado</h3>
-        <p class="producto__descripcion"> Arete largo con diseño de balines y flor.</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/Largos_hilobalin.jpeg" alt="Arete largo 2" />
-        <h3 class="producto__titulo">Arete largo con cadenita y balines</h3>
-        <p class="producto__descripcion">Arete largo con cadenita delicada y balines.</p>
-      </div>
-    </div>
-  </section>
 
-  <section>
-    <div class="section-products" id="conjuntos">
-      <h2 class="seccion-productos__titulo">Juegos collar-aretes</h2>
-      <div class="producto">
-        <img class="producto__imagen" src="img/conjunto_conchitas_plateado.jpeg" alt="Conjunto 1" />
-        <h3 class="producto__titulo">Juego collar y aretes</h3>
-        <p class="producto__descripcion">Juego collar-aretes con conchitas plateadas.</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/conjunto_esmeralda.jpeg" alt="Conjunto 2" />
-        <h3 class="producto__titulo">Juego collar y aretes</h3>
-        <p class="producto__descripcion">Juego collar-aretes con piedra esmeralda en tono azulado.</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/conjunto_fatima.jpeg" alt="Conjunto 1" />
-        <h3 class="producto__titulo">Juego collar y aretes</h3>
-        <p class="producto__descripcion">Juego collar-aretes con diseño mano de fatima.</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/conjunto_gotas_plateado.jpeg" alt="Conjunto 2" />
-        <h3 class="producto__titulo">Juego collar y aretes</h3>
-        <p class="producto__descripcion">Juego collar-aretes con gotas plateadas.</p>
-      </div>
-    </div>
-  </section>
-    
-  <section>
-      <div class="section-products" id="topitos">
-      <h2 class="seccion-productos__titulo">Topitos</h2>
-      <div class="producto">
-        <img class="producto__imagen" src="img/topitos_esmeraldas.jpeg" alt="Topito 1" />
-        <h3 class="producto__titulo">Topito pequeño</h3>
-        <p class="producto__descripcion">Arete pequeño estilo topito, simple y delicado.</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/topitos_mariposa.jpeg" alt="Topito 2" />
-        <h3 class="producto__titulo">Topitos mariposa</h3>
-        <p class="producto__descripcion">Arete pequeño estilo topito con diseño de mariposa.</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/topitos_ovalperla.jpeg" alt="Topito 1" />
-        <h3 class="producto__titulo">Topito perla ovalada incrustada</h3>
-        <p class="producto__descripcion">Arete estilo topito con perla ovalada incrustada.</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/topitos_perlas.jpeg" alt="Topito 2" />
-        <h3 class="producto__titulo">Topitos perlas</h3>
-        <p class="producto__descripcion">Arete pequeño estilo topito con perlas incrustadas.</p>
-      </div>
-    </div>
-  </section>
-    
-  <section>
-    <div class="section products" id="anillos">
-      <h2 class="seccion-bienvenida__titulo">Anillos</h2>
-      <div class="producto">
-        <img class="producto__imagen" src="img/Anillos_delicados1.jpg" alt="Anillo dorado" />
-        <h3 class="producto__titulo">Coleccion de anillos delicados</h3>
-        <p class="producto__descripcion">Conjunto de anillos delicados y elegantes.</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/Anillos_delicados2.jpg" alt="Anillo con piedra" />
-        <h3 class="producto__titulo">Coleccion de anillos delicados 2</h3>
-        <p class="producto__descripcion">Conjunto de anillos delicados y elegantes.</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/Anillos_elaborados.jpg" alt="Anillo dorado" />
-        <h3 class="producto__titulo">Coleccion de anillos elaborados</h3>
-        <p class="producto__descripcion">Conjunto de anillos elaborados y elegantes.</p>
-      </div>
-      <div class="producto">
-        <img class="producto__imagen" src="img/Anillos_grandes.jpg" alt="Anillo dorado" />
-        <h3 class="producto__titulo">Coleccion de anillos grandes</h3>
-        <p class="producto__descripcion">Conjunto de anillos grandes y elegantes.</p>
-      </div>
-    </div>
-  </section>
+<section class="seccion-productos" id="aretes-largos">
+  <h2 class="seccion-productos__titulo">Aretes largos</h2>
+  <div class="producto">
+    <img class="producto__imagen" src="img/Largo_perlas.jpeg" alt="Arete largo con perlas" />
+    <h3 class="producto__titulo">Arete largo dorado</h3>
+    <p class="producto__descripcion">Arete largo con perlas pequeñas.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/Largos_aros.jpeg" alt="Arete largo multi aros" />
+    <h3 class="producto__titulo">Arete largo multi aros</h3>
+    <p class="producto__descripcion">Arete largo con múltiples aros entrelazados.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/Largos_balinesflor.jpeg" alt="Arete con flor" />
+    <h3 class="producto__titulo">Arete largo plateado</h3>
+    <p class="producto__descripcion">Arete largo con diseño de balines y flor.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/Largos_hilobalin.jpeg" alt="Arete con balines" />
+    <h3 class="producto__titulo">Arete largo con cadenita y balines</h3>
+    <p class="producto__descripcion">Arete largo con cadenita delicada y balines.</p>
+  </div>
+</section>
 
+<section class="seccion-productos" id="conjuntos">
+  <h2 class="seccion-productos__titulo">Juegos collar-aretes</h2>
+  <div class="producto">
+    <img class="producto__imagen" src="img/conjunto_conchitas_plateado.jpeg" alt="Juego con conchitas plateadas" />
+    <h3 class="producto__titulo">Juego collar y aretes</h3>
+    <p class="producto__descripcion">Con conchitas plateadas.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/conjunto_esmeralda.jpeg" alt="Juego esmeralda" />
+    <h3 class="producto__titulo">Juego collar y aretes</h3>
+    <p class="producto__descripcion">Con piedra esmeralda en tono azulado.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/conjunto_fatima.jpeg" alt="Juego mano de Fátima" />
+    <h3 class="producto__titulo">Juego collar y aretes</h3>
+    <p class="producto__descripcion">Con diseño mano de Fátima.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/conjunto_gotas_plateado.jpeg" alt="Juego gotas plateadas" />
+    <h3 class="producto__titulo">Juego collar y aretes</h3>
+    <p class="producto__descripcion">Con gotas plateadas.</p>
+  </div>
+</section>
+
+<section class="seccion-productos" id="topitos">
+  <h2 class="seccion-productos__titulo">Topitos</h2>
+  <div class="producto">
+    <img class="producto__imagen" src="img/topitos_esmeraldas.jpeg" alt="Topito esmeralda" />
+    <h3 class="producto__titulo">Topito pequeño</h3>
+    <p class="producto__descripcion">Arete pequeño estilo topito, simple y delicado.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/topitos_mariposa.jpeg" alt="Topito mariposa" />
+    <h3 class="producto__titulo">Topitos mariposa</h3>
+    <p class="producto__descripcion">Arete pequeño con diseño de mariposa.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/topitos_ovalperla.jpeg" alt="Topito perla ovalada" />
+    <h3 class="producto__titulo">Topito perla ovalada incrustada</h3>
+    <p class="producto__descripcion">Arete estilo topito con perla ovalada incrustada.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/topitos_perlas.jpeg" alt="Topitos perlas" />
+    <h3 class="producto__titulo">Topitos perlas</h3>
+    <p class="producto__descripcion">Arete pequeño estilo topito con perlas incrustadas.</p>
+  </div>
+</section>
+
+<section class="seccion-productos" id="anillos">
+  <h2 class="seccion-productos__titulo">Anillos</h2>
+  <div class="producto">
+    <img class="producto__imagen" src="img/Anillos_delicados1.jpg" alt="Anillos delicados 1" />
+    <h3 class="producto__titulo">Colección de anillos delicados</h3>
+    <p class="producto__descripcion">Conjunto de anillos delicados y elegantes.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/Anillos_delicados2.jpg" alt="Anillos delicados 2" />
+    <h3 class="producto__titulo">Colección de anillos delicados 2</h3>
+    <p class="producto__descripcion">Conjunto de anillos delicados y elegantes.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/Anillos_elaborados.jpg" alt="Anillos elaborados" />
+    <h3 class="producto__titulo">Colección de anillos elaborados</h3>
+    <p class="producto__descripcion">Conjunto de anillos elaborados y elegantes.</p>
+  </div>
+  <div class="producto">
+    <img class="producto__imagen" src="img/Anillos_grandes.jpg" alt="Anillos grandes" />
+    <h3 class="producto__titulo">Colección de anillos grandes</h3>
+    <p class="producto__descripcion">Conjunto de anillos grandes y elegantes.</p>
+  </div>
+</section>
+
+
+  <!-- Beneficios de compra -->
   <section class="beneficios">
-    <h2 class="beneficios__titulo">¿Por qué comprar en abby accesorios?</h2>
+    <h2 class="beneficios__titulo">¿Por qué comprar con Abby?</h2>
     <div class="beneficios__contenedor">
-      <div class="beneficios__item">🚌 Envío gratis en compras mayores a $50.000</div>
-      <div class="beneficios__item">💳 Pago seguro y protegido</div>
-      <div class="beneficios__item">🎨 Productos hechos a mano</div>
+      <div class="beneficios__item">🚚 Envío gratis</div>
+      <div class="beneficios__item">💎 Hecho a mano</div>
+      <div class="beneficios__item">🔒 Pago seguro</div>
     </div>
   </section>
 
-  <section>
-    <div class="contacto" id="contacto">
-      <h2 class="contacto__titulo">Contáctanos</h2>
-      <form class="contacto__formulario">
-        <input class="contacto__input" type="text" placeholder="Nombre" required />
-        <input class="contacto__input" type="email" placeholder="Correo electrónico" required />
-        <textarea class="contacto__input" placeholder="¿Qué deseas ordenar o preguntar?" required cols=12></textarea>
-        <button class="contacto__boton" type="submit">Enviar</button>
-      </form>
-    </div>
+  <!-- Contacto -->
+  <section class="contacto" id="contacto">
+    <h2 class="contacto__titulo">Contáctanos</h2>
+    <form class="contacto__formulario">
+      <input class="contacto__input" type="text" placeholder="Nombre" required />
+      <input class="contacto__input" type="email" placeholder="Correo electrónico" required />
+      <textarea class="contacto__mensaje" placeholder="¿Qué deseas ordenar o preguntar?" required></textarea>
+      <button class="contacto__boton" type="submit">Enviar</button>
+    </form>
   </section>
 
-  <footer class="footer">
-    &copy; 2025 Abby Accesorios. Todos los derechos reservados.
+  <!-- Pie de página -->
+  <footer class="pie">
+    <p class="pie__texto">&copy; 2025 Abby Accesorios. Todos los derechos reservados.</p>
   </footer>
-
 </body>
-
 </html>
