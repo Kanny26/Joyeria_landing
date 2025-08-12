@@ -63,6 +63,8 @@ body {
   padding: 15px 0;
   font-size: 1rem;
   transition: background-color 0.3s ease;
+  width: 100%;
+  text-align: center;
 }
 
 /* Efecto hover para los enlaces del menú */
@@ -83,20 +85,33 @@ body {
   background: var(--color-tarjeta);
   padding: 10px 20px;
   z-index: 1;
-  text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .encabezado__logo {
   height: 90px;
+  flex-shrink: 0;
 }
+
+.encabezado__texto{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .encabezado__titulo {
   font-size: var(--tamano-titulo);
   color: #222;
+  margin: 0;
 }
+
 .encabezado__eslogan {
   font-size: var(--tamano-subtitulo);
   font-weight: 400;
   color: #666;
+  margin: 0;
 }
 
 /* ------------------------ SECCIÓN DE BIENVENIDA ------------------------ */
