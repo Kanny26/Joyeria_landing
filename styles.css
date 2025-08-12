@@ -157,16 +157,24 @@ body {
   background-color: #f6f6f6;
 }
 
+.seccion-productos .producto-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
 .producto {
-  display: inline-block;
-  width: 280px;
-  margin: 15px;
-  padding: 15px;
   background: var(--color-tarjeta);
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 280px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* Efecto hover para destacar producto */
@@ -182,6 +190,8 @@ body {
   object-fit: cover;
   border-radius: 8px;
 }
+
+
 
 /* ------------------------ SECCIÓN DE DESTACADOS ------------------------ */
 /* Productos destacados con estilo similar a productos */
