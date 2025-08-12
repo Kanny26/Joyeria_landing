@@ -325,3 +325,91 @@ body {
   margin-top: 40px;
 }
 
+/* ------------------------ RESPONSIVE - TABLETS Y MÓVILES ------------------------ */
+/* Ajustes para pantallas menores a 900px */
+@media (max-width: 900px) {
+  .barra-lateral {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: auto;
+  }
+
+  .barra-lateral__menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: auto;
+  }
+
+  .barra-lateral__enlace {
+    padding: 10px 15px;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    font-size: 0.9rem;
+  }
+
+  .barra-lateral__enlace:hover {
+    background: none;
+    border-bottom: 2px solid var(--color-acento);
+    color: var(--color-acento);
+  }
+
+  .encabezado {
+    position: relative;
+    left: 0;
+    right: 0;
+    height: auto;
+    padding: 15px 10px;
+    justify-content: center;
+  }
+
+  .seccion-bienvenida,
+  .seccion-productos,
+  .destacados,
+  .beneficios,
+  .contacto {
+    margin-left: 0;
+    padding: 60px 20px;
+  }
+
+  .seccion-productos .producto-container,
+  .destacados__lista,
+  .beneficios__contenedor {
+    justify-content: center;
+  }
+
+  .producto,
+  .destacados__item,
+  .beneficios__item {
+    width: 90%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .producto__imagen {
+    height: 180px;
+  }
+
+  .producto__titulo {
+    font-size: 1.1rem;
+  }
+
+  .producto__descripcion {
+    font-size: 0.95rem;
+  }
+
+  .seccion-productos__titulo {
+    font-size: 1.5rem;
+  }
+
+  .seccion-destacados__boton {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
