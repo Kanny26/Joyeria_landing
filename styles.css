@@ -24,7 +24,6 @@ body {
   font-family: var(--fuente-principal);
   background: var(--color-fondo);
   color: var(--color-texto);
-  display: flex;
 }
 
 /* ------------------------ BARRA LATERAL (MENÚ) ------------------------ */
@@ -32,14 +31,23 @@ body {
 .barra-lateral {
   background: #242323;
   width: 160px;
-  min-height: 100vh;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+  padding-top: 30px;
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 30px;
 }
 
 /* Logo y enlaces de navegación */
+.barra-lateral__menu{
+  width: 100%;
+}
+
 .barra-lateral__logo {
   margin-bottom: 30px;
 }
@@ -49,10 +57,11 @@ body {
 }
 
 .barra-lateral__enlace {
+  display: block;
   color: #fff;
   text-decoration: none;
   padding: 15px 0;
-  text-align: center;
+  font-size: 1rem;
   transition: background-color 0.3s ease;
 }
 
@@ -66,11 +75,15 @@ body {
 /* ------------------------ ENCABEZADO (HEADER SUPERIOR) ------------------------ */
 /* Se fija arriba y se adapta al ancho restante fuera del menú lateral */
 .encabezado {
+  position: fixed;
+  top: 0;
+  left: 160px;
+  right: 0;
+  height: 100px;
   background: var(--color-tarjeta);
   padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
+  z-index: 1;
+  text-align: left;
 }
 
 .encabezado__logo {
@@ -82,6 +95,7 @@ body {
 }
 .encabezado__eslogan {
   font-size: var(--tamano-subtitulo);
+  font-weight: 400;
   color: #666;
 }
 
@@ -89,12 +103,13 @@ body {
 /* Sección tipo hero con imagen o color de fondo oscuro */
 .seccion-bienvenida {
   background:#022;
-  color: white;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 400px;
+  width: 93%;
+  margin-left: 160px; /* Respeta la barra lateral */
+  position: sticky;
+  text-align: center;
+  color: white;
+  z-index: -1;
 }
 
 /* Capa oscura sobre la sección para mejorar el contraste del texto */
@@ -103,24 +118,25 @@ body {
   position: absolute;
   inset: 0;
   background: #000;
-  opacity: 0.4;
+  z-index: 0;
 }
 
 /* Contenido centrado en la sección bienvenida */
 .seccion-bienvenida__contenido {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
-  text-align: center;
 }
 
 /* ------------------------ SECCIÓN DE PRODUCTOS ------------------------ */
 /* Tarjetas de productos en diseño responsivo */
 .seccion-productos {
-  background: #f6f6f6;
-  padding: 60px 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
+  margin-left: 160px;
+  padding: 130px 20px 60px 20px;
+  text-align: center;
+  background-color: #f6f6f6;
 }
 
 .producto {
