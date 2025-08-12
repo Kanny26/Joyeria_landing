@@ -117,14 +117,17 @@ body {
 /* ------------------------ SECCIÓN DE BIENVENIDA ------------------------ */
 /* Sección tipo hero con imagen o color de fondo oscuro */
 .seccion-bienvenida {
-  background:#022;
-  height: 400px;
-  width: 93%;
+  background: #022;
   margin-left: 160px; /* Respeta la barra lateral */
-  position: sticky;
-  text-align: center;
   color: white;
-  z-index: -1;
+  height: 400px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 0;
 }
 
 /* Capa oscura sobre la sección para mejorar el contraste del texto */
