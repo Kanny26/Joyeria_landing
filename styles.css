@@ -103,25 +103,24 @@ body {
   position: absolute;
   inset: 0;
   background: #000;
-  z-index: 0;
+  opacity: 0.4;
 }
 
 /* Contenido centrado en la sección bienvenida */
 .seccion-bienvenida__contenido {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   z-index: 1;
+  text-align: center;
 }
 
 /* ------------------------ SECCIÓN DE PRODUCTOS ------------------------ */
 /* Tarjetas de productos en diseño responsivo */
 .seccion-productos {
-  margin-left: 160px;
-  padding: 130px 20px 60px 20px;
-  text-align: center;
-  background-color: #f6f6f6;
+  background: #f6f6f6;
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .producto {
